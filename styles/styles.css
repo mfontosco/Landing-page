@@ -1,0 +1,23 @@
+#hero{
+    background:url("../images/business.png");
+    margin-top:10px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.tracking-1-92 {
+    letter-spacing: 1.92px;
+  }
+
+  .btn{
+display: flex;
+width: 336px;
+height: 96px;
+padding: 21px 65px 21px 66px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 6px;
+background: #F3FD6B;
+  }
