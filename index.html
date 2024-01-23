@@ -9,7 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
-      
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     </head>
 <body>
     <nav class="flex flex-col md:flex-row justify-between items-center shadow-md py-4 px-4 flex-shrink-0 text-sm">
@@ -56,14 +58,14 @@
     
  
     
-    <section id="hero" class="min-h-screen px-4 pt-10 text-center md:text-left pb-4 ">
-        <h1 class="text-[#fff] font-poppins text-3xl md:text-5xl font-bold ">
+    <section id="hero" class="min-h-screen px-4 pt-10 text-center md:text-left pb-4 gradient-bg">
+        <h1 class="text-[#fff] font-poppins text-3xl md:text-5xl font-bold animate-fade-in" data-scroll>
             Coin-Catalyst , a Cutting -Edge Blockchain<br/>
             Project Poised to Revolutionize<br/>
             Decentralized Finance.
         </h1>
-        <div class="md:w-[759px]  mt-4">
-            <p class="py-2 text-[#fff] tracking-1-92 font-poppins text-md md:text-xl tracking">
+        <div class="md:w-[759px]  mt-4 animate-fade-in" data-scroll>
+            <p class="py-2 text-[#fff] tracking-1-92 font-poppins text-md md:text-xl tracking" data-scroll>
                 With a strong track record of technological innovation <br/>
                 and a team of seasoned experts. Coin-catalyst offers <br/>
                 an unparalleled opportunity for substantial ROI. The <br/>
@@ -71,25 +73,28 @@
                 lightning-fast transactions and scalability.
             </p>
         </div>
-        <button class="mt-10 py-4 font-poppins text-xl md:text-3xl font-bold px-6 md:px-10 rounded-md bg-[#F3FD6B]">
+        <button class="mt-10 py-4 font-poppins text-xl md:text-3xl font-bold px-6 md:px-10 rounded-md bg-[#F3FD6B] animate-fade-in" data-scroll>
             Get started
         </button>
     </section>
     
+    
+    
+    
     <section id="" class="flex flex-col md:flex-row justify-between items-center py-2">
         <!-- Bitcoin Image -->
-        <img src="./images/bitcoin (1).png" alt="bitcoin-photo" class="mb-4 md:mb-0">
+        <img src="./images/bitcoin (1).png" alt="bitcoin-photo" class="transition-transform transform hover:-translate-y-2 hover:shadow-md mb-4 md:mb-0">
     
         <!-- Ethereum Image -->
-        <img src="./images/eth.png" alt="ethereum-photo" class="mb-4 md:mb-0">
+        <img src="./images/eth.png" alt="ethereum-photo" class="mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
     
         <!-- Group and Binance Images (Nested Flex Container) -->
-        <div class="flex flex-col md:flex-row items-center gap-2 mb-4 md:mb-0">
+        <div class="flex flex-col md:flex-row items-center gap-2 mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
             <!-- Group Image -->
             <img src="./images/Group.png" class="h-12 md:h-[100px]"/>
     
             <!-- Binance Image -->
-            <img src="./images/binance.png" alt="binance-photo" class="mb-4 md:mb-0">
+            <img src="./images/binance.png" alt="binance-photo" class="mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
         </div>
     
         <!-- Dogecoin and Doge Images (Flex Container) -->
@@ -104,7 +109,7 @@
     
     
     
-    <section id="coin-catalyst" class="bg-[#f6fdff] py-9" data-aos="fade-in">
+    <section id="coin-catalyst" class="bg-[#f6fdff] py-9" data-aos="zoom-in" data-aos-duration="2000">
         <h2 class="text-center text-2xl font-semibold font-poppins">Discover What Coin-Catalysts Brings To You</h2>
     
         <div class="flex flex-col md:flex-row items-center justify-center mt-12 mb-12 px-4 md:px-0" data-aos="fade-up">
@@ -137,7 +142,7 @@
             </div>
         </div>
     
-        <div class="flex flex-col md:flex-row items-center justify-center px-4 md:px-0" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row items-center justify-center px-4 md:px-0" data-aos="zoom-in" data-aos-duration="2000">
             <!-- Card 3 -->
             <div class="flex flex-col md:flex-row  items-center md:items-start justify-center p-4 md:p-0 md:ml-6  w-full md:w-1/2" data-aos="fade-up">
                 <img src="./images/New employee-rafiki (1) 1.svg" class="image-height mb-4" alt="Transparency and Real-Time Tracking"/>
@@ -153,7 +158,7 @@
             </div>
     
             <!-- Card 4 -->
-            <div class="flex flex-col md:flex-row  items-center md:items-start justify-center p-4 md:p-0 w-full md:w-1/2" data-aos="fade-up">
+            <div class="slide-in-container flex flex-col md:flex-row  items-center md:items-start justify-center p-4 md:p-0 w-full md:w-1/2" data-aos="fade-up">
                 <img src="./images/Bitcoin P2P-amico 1.svg" class="image-height mb-4" alt="Premium Opportunities"/>
                 <div class="text-center md:text-center">
                     <h2 class="text-xl font-bold font-poppins text-[#F7931A] md:mt-4">Premium Opportunities</h2>
@@ -199,12 +204,12 @@
                 <button class="absolute top-10 bg-black rounded-full text-center py-2 px-3 text-white">Get started</button>
             </div>
             <h4 class="font-poppins font-semibold text-base text-[#000] mt-10">Daily profit: <span class="font-bold text-black ">5%</span></h4>
-            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3">Contract Life: <span class="text-black font-bold">Hourly(2hours in a day)</span></h4>
+            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3">Contract Life: <span class="text-black font-bold">Hourly<br/>(2hours in a day)</span></h4>
             <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">25%</span></h4>
             <button class="flex justify-center items-center bg-black font-poppins rounded-full text-center py-2 px-6 text-white">Invest</button>
         </div>
         
-        <div class="w-full md:w-1/4 border rounded-md h-96 flex bg-[#FF6868] flex-col items-center py-6 mt-4 md:mt-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
+        <div class="w-full bg-opacity-75 md:w-1/4 border rounded-md h-96 flex bg-[#FF6868] flex-col items-center py-6 mt-4 md:mt-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
             <h2 class="font-bold text-base font-poppins mb-4">Ultimate Plan</h2>
             <div class="bg-white mt-4 relative w-56 py-2 h-16 flex justify-center">
                 <h2 class="font-bold ">$5000-unlimited</h2>
@@ -260,24 +265,24 @@
     
     <section id="faq" class="bg-white px-4 md:px-6 pt-4 pb-4">
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>What is Coin-Catalyst, and how does it differ from other cryptocurrency platforms?</p>
             </div>
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+    
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>How do I choose the right investment package for my needs?</p>
             </div>
         </div>
     
-       
-    
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
-                <p> Can I switch between investment packages after making my initial choice?</p>
+                <p>Can I switch between investment packages after making my initial choice?</p>
             </div>
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+    
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>What is the projected ROI for each investment package, and how is it calculated?</p>
             </div>
@@ -286,11 +291,12 @@
         <!-- Repeat the above structure for each FAQ item -->
     
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>How does Coin-Catalyst ensure the security of my investments?</p>
             </div>
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+    
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>Can I track the performance of my investment in real-time?</p>
             </div>
@@ -299,38 +305,43 @@
         <!-- Repeat the above structure for each FAQ item -->
     
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>Are there any fees associated with investing with Coin-Catalyst?</p>
             </div>
-            <div class="flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2">
+    
+            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <p>What level of customer support does Coin-Catalyst provide?</p>
             </div>
         </div>
     </section>
     
-    <section id="coin-phone" class="md:h-72 bg-[#F3FF4A] px-4 md:px-24 flex flex-col md:flex-row items-center justify-end">
-        <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
-            <h2 class="text-4xl font-bold mb-4 md:text-left">Don't Miss a Thing</h2>
-            <p class="mb-4 text-left">Don't miss out on the next big thing in crypto! Subscribe<br/>
-                now and empower your journey with ArticCapital's<br/>
-                exclusive newsletter. Your success starts with staying<br/>
-                informed. Subscribe today!</p>
     
-            <form>
-                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Subscribe</label>
-                <div class="relative">
-                    <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-gray dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your mail" required>
-                    <button type="submit" class="text-white absolute end-0 bottom-0.5 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-6 py-4 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</button>
-                </div>
-            </form>
+    <section class="bg-[#F3FF4A]">
+        <div id="coin-phone" data-aos="zoom-in" data-aos-duration="2000" class="md:h-72 bg-[#F3FF4A] px-4 md:px-24 flex flex-col md:flex-row items-center justify-end">
+            <div class="w-full  md:w-[600px]  text-center  ">
+                <h2 class="text-4xl font-bold mb-4 md:text-left">Don't Miss a Thing</h2>
+                <p class="mb-4 text-left">Don't miss out on the next big thing in crypto! Subscribe<br/>
+                    now and empower your journey with ArticCapital's<br/>
+                    exclusive newsletter. Your success starts with staying<br/>
+                    informed. Subscribe today!</p>
+        
+                <form>
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Subscribe</label>
+                    <div class="relative">
+                        <input type="search" id="default-search" class="block w-[400px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-gray dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your mail" required>
+                        <button type="submit" class="text-white absolute end-36 bottom-0.5 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-6 py-4 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     
     
     
-    <section id="footer" class="flex flex-col md:flex-row justify-between h-auto md:h-72 bg-[#000] text-white px-4 md:px-12 py-8 md:pt-12">
+ <section class="bg-black">
+    <div id="footer" data-aos="zoom-in" data-aos-duration="2000" class="flex flex-col md:flex-row justify-between h-auto md:h-72 bg-[#000] text-white px-4 md:px-12 py-8 md:pt-12">
         <div class="mb-4 md:mb-0">
             <h4 class="text-2xl font-semibold">Coin-Catalysts</h4>
             <p>Pieter Calandlaan 157, Amsterdam,<br/> Netherlands.</p>
@@ -348,28 +359,43 @@
             <p>Gold plan</p>
             <p>Diamond plan</p>
         </div>
-    </section>
+    </div>
+ </section>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init({
-            once: true,
-            offset: 100,
-        });
+        AOS.init();
     </script>
     <script>
         const mobileMenuIcon = document.getElementById('mobile-menu');
         const mobileMenuContainer = document.getElementById('mobile-menu-container');
         const closeMobileMenuIcon = document.getElementById('close-mobile-menu');
-    
+
         mobileMenuIcon.addEventListener('click', () => {
-            mobileMenuContainer.classList.add('visible');
+            mobileMenuContainer.style.display = 'block';
         });
-    
+
         closeMobileMenuIcon.addEventListener('click', () => {
-            mobileMenuContainer.classList.remove('visible');
+            mobileMenuContainer.style.display = 'none';
         });
     </script>
+    <script>
+        const elements = document.querySelectorAll('[data-scroll]');
+      
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+      
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      </script>
+      
     
 </body>
 </html>
