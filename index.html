@@ -14,24 +14,24 @@
 
     </head>
 <body>
-    <nav class="flex flex-col md:flex-row justify-between items-center shadow-md py-4 px-4 flex-shrink-0 text-sm">
-        <div>
+    <nav class="flex  md:flex-row justify-between items-center shadow-md py-4 px-4 flex-shrink-0 text-sm fixed top-0 left-0 w-full bg-white" id="nav">
+        <div class="">
             <img src="./images/Coin-Catalyst.png"/>
         </div>
-        
+    
         <!-- Hamburger icon for mobile -->
-        <div class="md:hidden cursor-pointer" id="mobile-menu">
+        <div class="md:hidden  cursor-pointer ml-auto" id="mobile-menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </div>
-        
+    
         <ul class="md:flex hidden justify-between gap-3 w-64 text-md font-poppins font-semibold leading-5">
             <li>Home</li>
             <li>About Us</li>
             <li>Contact</li>
         </ul>
-        
+    
         <div class="md:flex hidden mr-10 flex gap-4">
             <button class="py-1 px-4 bg-[#F3FD6B] border rounded-md font-semibold">Connect</button>
             <button class="border py-1 px-4 border-[#F3FD6B] rounded-md font-semibold">Sign-In</button>
@@ -39,7 +39,7 @@
     </nav>
     
     <!-- Mobile menu -->
-    <div class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75" id="mobile-menu-container" style="display: none;">
+    <div class="md:hidden fixed top-10 z-10 left-0 w-full h-full bg-gray-800 bg-opacity-75" id="mobile-menu-container" style="display: none;">
         <div class="flex justify-end p-4">
             <svg class="w-6 h-6 cursor-pointer text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="close-mobile-menu">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -56,22 +56,24 @@
         </div>
     </div>
     
- 
-    
-    <section id="hero" class="min-h-screen px-4 pt-10 text-center md:text-left pb-4 gradient-bg">
+    <section id="hero" class=" overlay bg-black bg-opacity-50 relative min-h-[600px] top-10 bottom-0 px-4 mt-16 pt-10 text-center md:text-left  gradient-bg">
         <h1 class="text-[#fff] font-poppins text-3xl md:text-5xl font-bold animate-fade-in" data-scroll>
-            Coin-Catalyst , a Cutting -Edge Blockchain<br/>
+            Coin-Catalyst, a Cutting-Edge Blockchain<br/>
             Project Poised to Revolutionize<br/>
             Decentralized Finance.
         </h1>
-        <div class="md:w-[759px]  mt-4 animate-fade-in" data-scroll>
+        <div class="md:w-[759px] mt-4 animate-fade-in" data-scroll>
             <p class="py-2 text-[#fff] tracking-1-92 font-poppins text-md md:text-xl tracking" data-scroll>
                 With a strong track record of technological innovation <br/>
-                and a team of seasoned experts. Coin-catalyst offers <br/>
-                an unparalleled opportunity for substantial ROI. The <br/>
-                project’s unique consensus algorithm ensures <br/>
-                lightning-fast transactions and scalability.
+                and a team of seasoned experts <span id="more">
+                    Coin-catalyst offers <br/>
+                    an unparalleled opportunity for substantial ROI. The <br/>
+                    project’s unique consensus algorithm ensures <br/>
+                    lightning-fast transactions and scalability
+                </span>
+                <span id="dots">...</span>
             </p>
+            <button onclick="toggleReadMore('more', 'dots', 'myBtn')">Read more</button>
         </div>
         <button class="mt-10 py-4 font-poppins text-xl md:text-3xl font-bold px-6 md:px-10 rounded-md bg-[#F3FD6B] animate-fade-in" data-scroll>
             Get started
@@ -81,12 +83,14 @@
     
     
     
-    <section id="" class="flex flex-col md:flex-row justify-between items-center py-2">
+    <section id="" class="relative top-10 flex-col md:flex md:flex-row justify-between items-center py-4">
         <!-- Bitcoin Image -->
-        <img src="./images/bitcoin (1).png" alt="bitcoin-photo" class="transition-transform transform hover:-translate-y-2 hover:shadow-md mb-4 md:mb-0">
+       <div class="flex flex-col md:flex-row items-center gap-2 mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
+        <img src="./images/bitcoin (1).png" alt="bitcoin-photo" class="transition-transform transform hover:-translate-y-2  hover:shadow-md mb-4 md:mb-0">
     
         <!-- Ethereum Image -->
         <img src="./images/eth.png" alt="ethereum-photo" class="mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
+       </div>
     
         <!-- Group and Binance Images (Nested Flex Container) -->
         <div class="flex flex-col md:flex-row items-center gap-2 mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
@@ -109,7 +113,7 @@
     
     
     
-    <section id="coin-catalyst" class="bg-[#f6fdff] py-9" data-aos="zoom-in" data-aos-duration="2000">
+    <section id="coin-catalyst" class="relative top-10 bg-[#f6fdff] py-9" data-aos="zoom-in" data-aos-duration="2000">
         <h2 class="text-center text-2xl font-semibold font-poppins">Discover What Coin-Catalysts Brings To You</h2>
     
         <div class="flex flex-col md:flex-row items-center justify-center mt-12 mb-12 px-4 md:px-0" data-aos="fade-up">
@@ -323,15 +327,15 @@
             <div class="w-full  md:w-[600px]  text-center  ">
                 <h2 class="text-4xl font-bold mb-4 md:text-left">Don't Miss a Thing</h2>
                 <p class="mb-4 text-left">Don't miss out on the next big thing in crypto! Subscribe<br/>
-                    now and empower your journey with ArticCapital's<br/>
+                    now and empower your journey with Coin-catalyst<br/>
                     exclusive newsletter. Your success starts with staying<br/>
                     informed. Subscribe today!</p>
         
-                <form>
+                <form class="pb-4">
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Subscribe</label>
                     <div class="relative">
-                        <input type="search" id="default-search" class="block w-[400px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-gray dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your mail" required>
-                        <button type="submit" class="text-white absolute end-36 bottom-0.5 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-6 py-4 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</button>
+                        <input type="search" id="default-search" class="block w-full md:w-[400px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-gray dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your mail" required>
+                        <button type="submit" class="text-white absolute  end-0.5 md:end-36 bottom-0.5 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-6 py-4 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</button>
                     </div>
                 </form>
             </div>
@@ -378,7 +382,8 @@
         closeMobileMenuIcon.addEventListener('click', () => {
             mobileMenuContainer.style.display = 'none';
         });
-    </script>
+        </script>
+    
     <script>
         const elements = document.querySelectorAll('[data-scroll]');
       
@@ -394,6 +399,33 @@
         elements.forEach((element) => {
           observer.observe(element);
         });
+        function toggleReadMore(id) {
+            var content = document.getElementById(id);
+            var button = document.querySelector('.read-more-button');
+        
+            if (content.style.display === 'none') {
+              content.style.display = 'block';
+              button.innerText = 'Read Less';
+            } else {
+              content.style.display = 'none';
+              button.innerText = 'Read More';
+            }
+          }
+          function toggleReadMore(contentId, dotsId, btnId) {
+            var content = document.getElementById(contentId);
+            var dots = document.getElementById(dotsId);
+            var button = document.getElementById(btnId);
+
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                dots.style.display = 'none';
+                button.innerText = 'Read less';
+            } else {
+                content.style.display = 'none';
+                dots.style.display = 'inline';
+                button.innerText = 'Read more';
+            }
+        }
       </script>
       
     

@@ -7,10 +7,37 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
-.gradient-bg {
-  background: linear-gradient(to right, #050505, #0a0a0a); /* Adjust color values as needed */
+#hero{
+  margin-top:100px;
+}
+.overlay{
+  background: rgba(0,0,0,0.5);
+}
+.read-more-content {
+  overflow: hidden;
+  max-height: 80px; 
+  transition: max-height 0.3s ease-out;
 }
 
+.read-more-button {
+  cursor: pointer;
+  color: #007bff; /* Change the color as needed */
+}
+.gradient-bg {
+  background: linear-gradient(to right, #000000, #0a0a0a); /* Adjust color values as needed */
+}
+#more {display: none;}
+#nav {
+  transition: background-color 0.3s ease;
+   z-index: 10
+}
+#close-mobile-menu {
+  z-index: 200; /* Choose a value higher than 999 */
+}
+.fixed-nav {
+  background-color: rgba(255, 255, 255, 0.95); /* Adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 #hero{
     background:url("../images/business.png");
@@ -111,3 +138,8 @@ background: #F3FD6B;
   animation: fadeIn 1s ease-in-out;
 }
 
+@media only screen and (max-width: 768px) {
+  #coin-phone {
+     background-image:none;
+  }
+}
