@@ -31,13 +31,20 @@ border-radius: 6px;
 background: #F3FD6B;
   }
 
-  #coin-phone{
+  #coin-phone {
     background-image: url("../images/coin-phone.png");
-    background-repeat:no repeat;
-    background-position:center;
-    background-size:cover;
-  }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
   .image-height{
     width:100px;
     height:100px
   }
+  #mobile-menu-container.visible {
+    display: block;
+}
+
+#mobile-menu-container {
+    display: none;
+}
