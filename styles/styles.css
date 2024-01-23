@@ -37,3 +37,7 @@ background: #F3FD6B;
     background-position:center;
     background-size:cover;
   }
+  .image-height{
+    width:100px;
+    height:100px
+  }
