@@ -14,27 +14,27 @@
 
     </head>
 <body>
-    <nav class="flex  md:flex-row justify-between items-center shadow-md py-4 px-4 flex-shrink-0 text-sm fixed top-0 left-0 w-full bg-white" id="nav">
+    <nav class="flex md:flex-row justify-between items-center shadow-md py-4 px-4 flex-shrink-0 text-sm fixed top-0 left-0 w-full bg-white" id="nav">
         <div class="">
             <img src="./images/Coin-Catalyst.png"/>
         </div>
     
         <!-- Hamburger icon for mobile -->
-        <div class="md:hidden  cursor-pointer ml-auto" id="mobile-menu">
+        <div class="md:hidden cursor-pointer ml-auto" id="mobile-menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </div>
     
         <ul class="md:flex hidden justify-between gap-3 w-64 text-md font-poppins font-semibold leading-5">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li class="hover:text-yellow-800 transition cursor-pointer ">Home</li>
+            <li class="hover:text-yellow-800 transition cursor-pointer ">About Us</li>
+            <li class="hover:text-yellow-800 transition cursor-pointer ">Contact</li>
         </ul>
     
         <div class="md:flex hidden mr-10 flex gap-4">
-            <button class="py-1 px-4 bg-[#F3FD6B] border rounded-md font-semibold">Connect</button>
-            <button class="border py-1 px-4 border-[#F3FD6B] rounded-md font-semibold">Sign-In</button>
+            <button class="py-1 px-4 bg-[#F3FD6B] border rounded-md font-semibold hover:bg-yellow-500 transition">Connect</button>
+            <button class="border py-1 px-4 border-[#F3FD6B] rounded-md font-semibold hover:border-yellow-500 hover:text-yellow-500 transition">Sign-In</button>
         </div>
     </nav>
     
@@ -46,15 +46,16 @@
             </svg>
         </div>
         <ul class="flex flex-col items-center">
-            <li class="py-2">Home</li>
-            <li class="py-2">About Us</li>
-            <li class="py-2">Contact</li>
+            <li class="py-2 cursor-pointer hover:text-yellow-800 transition">Home</li>
+            <li class="py-2 cursor-pointer  hover:text-yellow-800 transition">About Us</li>
+            <li class="py-2 cursor-pointer  hover:text-yellow-800 transition">Contact</li>
         </ul>
         <div class="flex flex-col items-center mt-4">
-            <button class="py-1 px-4 bg-[#F3FD6B] border rounded-md font-semibold mb-2">Connect</button>
-            <button class="border py-1 px-4 border-[#F3FD6B] rounded-md font-semibold">Sign-In</button>
+            <button class="py-1 px-4 bg-[#F3FD6B] border rounded-md font-semibold hover:bg-yellow-500 transition mb-2">Connect</button>
+            <button class="border py-1 px-4 border-[#F3FD6B] rounded-md font-semibold hover:border-yellow-500 hover:text-yellow-500 transition">Sign-In</button>
         </div>
     </div>
+    
     
     <section id="hero" class=" overlay bg-black bg-opacity-50 relative min-h-[600px] top-10 bottom-0 px-4 mt-16 pt-10 text-center md:text-left  gradient-bg">
         <h1 class="text-[#fff] font-poppins text-3xl md:text-5xl font-bold animate-fade-in" data-scroll>
@@ -75,41 +76,14 @@
             </p>
             <button onclick="toggleReadMore('more', 'dots', 'myBtn')">Read more</button>
         </div>
-        <button class="mt-10 py-4 font-poppins text-xl md:text-3xl font-bold px-6 md:px-10 rounded-md bg-[#F3FD6B] animate-fade-in" data-scroll>
-            Get started
+        <button class="md:mt-20 mt-10 py-4 font-poppins text-xl md:text-3xl font-bold px-6 md:px-10 rounded-md bg-[#F3FD6B] hover:bg-yellow-500 transition animate-fade-in" data-scroll>
+            <a href="/login.html" class="hover:text-gray-800">Get started</a>
         </button>
+        
     </section>
     
     
-    
-    
-    <section id="" class="relative top-10 flex-col md:flex md:flex-row justify-between items-center py-4">
-        <!-- Bitcoin Image -->
-       <div class="flex flex-col md:flex-row items-center gap-2 mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
-        <img src="./images/bitcoin (1).png" alt="bitcoin-photo" class="transition-transform transform hover:-translate-y-2  hover:shadow-md mb-4 md:mb-0">
-    
-        <!-- Ethereum Image -->
-        <img src="./images/eth.png" alt="ethereum-photo" class="mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
-       </div>
-    
-        <!-- Group and Binance Images (Nested Flex Container) -->
-        <div class="flex flex-col md:flex-row items-center gap-2 mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
-            <!-- Group Image -->
-            <img src="./images/Group.png" class="h-12 md:h-[100px]"/>
-    
-            <!-- Binance Image -->
-            <img src="./images/binance.png" alt="binance-photo" class="mb-4 md:mb-0 transition-transform transform hover:-translate-y-2 hover:shadow-md">
-        </div>
-    
-        <!-- Dogecoin and Doge Images (Flex Container) -->
-        <div class="flex flex-col md:flex-row items-center gap-2">
-            <!-- Dogecoin Image -->
-            <img src="./images/dogecoin.png" class="h-12 md:h-[100px]"/>
-    
-            <!-- Doge Image -->
-            <img src="./images/Doge.png" alt="doge-photo" class="mb-4 md:mb-0">
-        </div>
-    </section>
+
     
     
     
@@ -185,7 +159,7 @@
             </div>
             <h4 class="font-poppins font-semibold text-base text-[#000] mt-10">Daily profit: <span class="font-bold text-black ">3%</span></h4>
             <h4 class="font-poppins text-[#000] font-semibold text-base mt-3">Contract Life: <span class="text-black font-bold">10 Days</span></h4>
-            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">18%</span></h4>
+            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">10%</span></h4>
             <button class="flex justify-center font-poppins bg-black rounded-full text-center py-2 px-6 text-white">Invest</button>
         </div>
     
@@ -197,7 +171,7 @@
             </div>
             <h4 class="font-poppins font-semibold text-base text-[#000] mt-10">Daily profit: <span class="font-bold text-black ">5%</span></h4>
             <h4 class="font-poppins text-[#000] font-semibold text-base mt-3">Contract Life: <span class="text-black font-bold">10 Days</span></h4>
-            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">20%</span></h4>
+            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">10%</span></h4>
             <button class="flex justify-center font-poppins items-center bg-black rounded-full text-center py-2 px-6 text-white">Invest</button>
         </div>
     
@@ -209,7 +183,7 @@
             </div>
             <h4 class="font-poppins font-semibold text-base text-[#000] mt-10">Daily profit: <span class="font-bold text-black ">5%</span></h4>
             <h4 class="font-poppins text-[#000] font-semibold text-base mt-3">Contract Life: <span class="text-black font-bold">Hourly<br/>(2hours in a day)</span></h4>
-            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">25%</span></h4>
+            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">10%</span></h4>
             <button class="flex justify-center items-center bg-black font-poppins rounded-full text-center py-2 px-6 text-white">Invest</button>
         </div>
         
@@ -221,7 +195,7 @@
             </div>
             <h4 class="font-poppins font-semibold text-base text-[#000] mt-10">Daily profit: <span class="font-bold text-black ">10%</span></h4>
             <h4 class="font-poppins text-[#000] font-semibold text-base mt-3">Contract Life: <span class="text-black font-bold">Daily</span></h4>
-            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">25%</span></h4>
+            <h4 class="font-poppins text-[#000] font-semibold text-base mt-3 mb-6">Referral Bonus: <span class="text-black font-bold">10%</span></h4>
             <button class="flex justify-center items-center bg-black font-poppins rounded-full text-center py-2 px-6 text-white">Invest</button>
         </div>
     </section>
@@ -244,9 +218,9 @@
                     <img src="./images/female.jpg" class="w-32 h-32 object-cover rounded-full" alt="testifier's picture"/>
                 </div>
                 <p class="font-bold italic font-poppins text-sm">
-                    "Coin-catalyst Gold Package strikes the perfect balance for those seeking moderate risk with the potential for higher returns. The team's expertise in selecting a mix of mid-cap cryptocurrencies and emerging projects is evident in the consistent performance of my portfolio. Coin-catalyst has earned my trust as a reliable investment partner."
+                    "Coin-catalyst Ultimate Plan strikes the perfect balance for those seeking moderate risk with the potential for higher returns. The team's expertise in selecting a mix of mid-cap cryptocurrencies and emerging projects is evident in the consistent performance of my portfolio. Coin-catalyst has earned my trust as a reliable investment partner."
                 </p>
-                <p class="text-xl font-poppins italic font-bold mt-2">Lisa R., Gold Package Investor</p>
+                <p class="text-xl font-poppins italic font-bold mt-2">Lisa Richard, Ultimate Plan Investor</p>
             </div>
     
             <div class="w-full md:w-1/3 py-4 px-4 rounded-2xl shadow-md bg-white transition-transform transform hover:shadow-lg hover:scale-105">
@@ -254,9 +228,9 @@
                     <img src="./images/male2.jpg" class="w-32 h-32 object-cover rounded-full" alt="testifier's picture"/>
                 </div>
                 <p class="font-semibold text-sm italic font-poppins">
-                    "Coin-catalyst Gold Package has been a key driver of growth in my investment journey. The mix of mid-cap cryptocurrencies and emerging projects has proven to be a winning combination. The projected ROI has been consistently met, and I appreciate the professional guidance provided by Coin-catalyst team. Highly recommended for investors seeking a balanced approach to crypto investments."
+                    "Coin-catalyst Ultimate Plan has been a key driver of growth in my investment journey. The mix of mid-cap cryptocurrencies and emerging projects has proven to be a winning combination. The projected ROI has been consistently met, and I appreciate the professional guidance provided by Coin-catalyst team. Highly recommended for investors seeking a balanced approach to crypto investments."
                 </p>
-                <p class="text-xl font-poppins italic font-bold mt-2">Robert H., Gold Package Investor</p>
+                <p class="text-xl font-poppins italic font-bold mt-2">Robert Hitler, Ultimate Plan Investor</p>
             </div>
         </div>
     </section>
@@ -269,55 +243,87 @@
     
     <section id="faq" class="bg-white px-4 md:px-6 pt-4 pb-4">
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>What is Coin-Catalyst, and how does it differ from other cryptocurrency platforms?</p>
+            <div  class="faq-item flex items-center min-min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question1')"  >
+                <i id="icon1" class="fas fa-plus"></i>
+                <p id="question1" class="question">What is Coin-Catalyst, and how does it differ from other cryptocurrency investment platforms?</p>
+                <p id="answer1" class="answer"><span class="font-bold">Ans:</span>Coin-catalysts is a dynamic cryptocurrency investment platform offering diversified packages tailored to various risk profiles. Unlike traditional platforms, Coin-catalyst provides exclusive opportunities and real-time tracking for transparent and informed decision-making.
+                </p>
             </div>
     
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>How do I choose the right investment package for my needs?</p>
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question2')"   >
+                <i id="icon2" class="fas fa-plus"></i>
+                <p id="question2" class="question">How do I choose the right investment package for my needs?</p>
+                <p id="answer2" class="answer"><span class="font-bold">Ans:</span>Coin-catalyst offers four packages – Starter plan, Silver plan, Bonus plan, . Assess your risk tolerance and investment goals to determine the package that aligns best with your financial objectives.</p>
             </div>
         </div>
     
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>Can I switch between investment packages after making my initial choice?</p>
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question3')" >
+                <i id="icon3" class="fas fa-plus"></i>
+                <p id="question3" class="question">Can I switch between investment packages after making my initial choice?</p>
+                <p id="answer3" class="answer"><span class="font-bold">Ans:</span> While package changes are not frequent, coin-catalyst provides flexibility for investors to reassess their strategy. Reach out to our support team for personalized assistance and guidance on adjusting your investment approach.
+                </p>
             </div>
     
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>What is the projected ROI for each investment package, and how is it calculated?</p>
-            </div>
-        </div>
-    
-        <!-- Repeat the above structure for each FAQ item -->
-    
-        <div class="flex flex-col md:flex-row gap-4">
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>How does Coin-Catalyst ensure the security of my investments?</p>
-            </div>
-    
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>Can I track the performance of my investment in real-time?</p>
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question4')" >
+                <i id="icon4" class="fas fa-plus"></i>
+                <p id="question4" class="question">What is the projected ROI for each investment package, and how is it calculated?</p>
+                <p id="answer4" class="answer"> <span class="font-bold">Ans:</span>The projected ROI varies for each package: Starter Plan (3% daily Profit and 10 % referral profit), Silver Plan (5 % daily Profit and 10% referral profit), Bonus Plan (5% Hourly profit, 10 % referral), and Ultimate Plan (5 % daily). ROI is calculated based on historical performance, market trends, and the specific assets within each package.
+                </p>
             </div>
         </div>
     
         <!-- Repeat the above structure for each FAQ item -->
     
         <div class="flex flex-col md:flex-row gap-4">
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>Are there any fees associated with investing with Coin-Catalyst?</p>
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question5')" >
+                <i id="icon5" class="fas fa-plus"></i>
+                <p id="question5" class="question">How does Coin-Catalyst ensure the security of my investments?</p>
+                <p id="answer5" class="answer">
+                    <span class="font-bold">Ans:</span>Coin-catalyst employs state-of-the-art security measures, including encryption protocols and secure wallets, to safeguard your investments. Our commitment to security is unwavering, and we continually update our systems to stay ahead of potential threats.
+                    </p>
             </div>
     
-            <div class="faq-item flex items-center h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out">
-                <i class="fas fa-plus"></i>
-                <p>What level of customer support does Coin-Catalyst provide?</p>
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question6')" >
+                <i id="icon6" class="fas fa-plus"></i>
+                <p id="question6" class="question">Can I track the performance of my investment in real-time?</p>
+                <p id="answer6" class="answer"> <span class="font-bold">Ans:</span>Yes, Coin-catalyst provides a transparent and user-friendly dashboard for real-time tracking of your investment performance. Accessible through our platform, this feature allows you to stay informed and make data-driven decisions.
+                </p>
             </div>
+        </div>
+    
+        <!-- Repeat the above structure for each FAQ item -->
+    
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question7')" >
+                <i id="icon7" class="fas fa-plus"></i>
+                <p id="question7" class="question">Are there any fees associated with investing with Coin-Catalyst?</p>
+                <p id="answer7" class="answer"> <span class="font-bold">Ans:</span>Coin-catalyst is transparent about its fee structure. While there may be minimal fees associated with certain transactions or package changes, these details are clearly communicated to investors. Please review our fee schedule or contact our support team for specific information.
+                </p>
+            </div>
+    
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question8')" >
+                <i id="icon8" class="fas fa-plus"></i>
+                <p id="question8" class="question">What level of customer support does Coin-Catalyst provide?</p>
+                <p id="answer8" class="answer"> <span class="font-bold">Ans:</span> Catalyst is committed to delivering exceptional customer support. Our team is available to assist you with any inquiries or concerns. Reach out through our platform, and our dedicated support specialists will provide timely and helpful assistance to ensure a smooth investment experience.</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question9')" >
+              <i id="icon9" class="fas fa-plus"></i>
+              <p id="question9" class="question">What makes the Premium Maxed Package different from the other investment options?</p>
+              <p id="answer9" class="answer"> <span class="font-bold">Ans:</span>The Ultimate Maxed Package is designed for high-net-worth individuals and offers exclusive access to pre-sale tokens, IEOs, and premium opportunities. This package is tailored for investors seeking a strategic advantage and higher returns.
+              </p>
+            </div>
+          
+            <div class="faq-item flex items-center min-h-24 px-4 gap-4 rounded-md shadow-md mb-4 md:mb-0 w-full md:w-1/2 hover:bg-gray-100 transition duration-300 ease-in-out" onclick="toggleAnswer('question10')" >
+              <i id="icon10" class="fas fa-plus"></i>
+              <p id="question10" class="question">How often does Coin-catalyst update its investment packages and offerings?</p>
+              <p id="answer10" class="answer"> <span class="font-bold">Ans:</span>Coin-catalyst continually evaluates market trends and updates its offerings as needed. While major changes are infrequent, we strive to provide our investors with the latest and most relevant opportunities in the dynamic cryptocurrency landscape.
+              </p>
+            </div>
+          </div>
+          
         </div>
     </section>
     
@@ -399,19 +405,8 @@
         elements.forEach((element) => {
           observer.observe(element);
         });
-        function toggleReadMore(id) {
-            var content = document.getElementById(id);
-            var button = document.querySelector('.read-more-button');
         
-            if (content.style.display === 'none') {
-              content.style.display = 'block';
-              button.innerText = 'Read Less';
-            } else {
-              content.style.display = 'none';
-              button.innerText = 'Read More';
-            }
-          }
-          function toggleReadMore(contentId, dotsId, btnId) {
+        function toggleReadMore(contentId, dotsId, btnId) {
             var content = document.getElementById(contentId);
             var dots = document.getElementById(dotsId);
             var button = document.getElementById(btnId);
@@ -425,7 +420,25 @@
                 dots.style.display = 'inline';
                 button.innerText = 'Read more';
             }
-        }
+        } 
+
+        function toggleAnswer(questionId) {
+            var question = document.getElementById('question' + questionId.slice(-1));
+            var answer = document.getElementById('answer' + questionId.slice(-1));
+            var icon = document.getElementById('icon' + questionId.slice(-1));
+      
+            if (answer.style.display === 'none' || answer.style.display === '') {
+              question.style.display = 'none';
+              answer.style.display = 'block';
+              icon.classList.remove('fa-plus');
+              icon.classList.add('fa-minus');
+            } else {
+              question.style.display = 'block';
+              answer.style.display = 'none';
+              icon.classList.remove('fa-minus');
+              icon.classList.add('fa-plus');
+            }
+          }
       </script>
       
     

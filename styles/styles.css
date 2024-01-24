@@ -7,6 +7,15 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
+.faq-item {
+  cursor: pointer;
+}
+.question {
+  display: block;
+}
+.answer {
+  display: none;
+}
 #hero{
   margin-top:100px;
 }

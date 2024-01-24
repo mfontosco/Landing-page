@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-[#6bfdcc] flex justify-center items-center py-8 ">
+        <img src="./images/Coin-Catalyst.png"/>
+    </nav>
+    <div class="shadow-md py-8">
+
+    </div>
+    <main class="px-4 mt-10">
+        <button class="bg-[#6BFDCC] py-2 px-6 text-base  font-bold text-white rounded-md">Dashboard</button>
+        <section class="mb-4 md:flex gap-4 mt-4">
+            <div class="md:w-3/4 shadow-md h-[300px] px-2">
+                <h3 class="text-center text-[#6BFDCC] font-medium">Account Balance</h3>
+                <div class="flex justify-between mt-4 px-2 mb-2">
+                    <div class="flex flex-col justify-center items-center">
+                        <h3 class="text-[#6BFDCC] text-md font-medium">USD <span>0.00</span></h3>
+                        <p class="text-base text-[#6BFDCC] font-medium ">Available Balance</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h3 class="text-[#808080] text-md font-medium">USD <span>0.00</span></h3>
+                        <p class="text-base text-[#808080] font-medium ">System Earnings</p>
+                    </div>
+                </div>
+                    <hr/>
+                    <p class="mt-4 text-base text-[#999] w-full font-medium lg:max-w-[90%]  md:flex md:justify-center">
+                        Your available balance is the real balance you can withdraw 
+                        from, while your earning balance is your total gained balance.
+                    </p>
+                    
+                         <div class="flex justify-center gap-10 w-[90%] mt-4">
+                            <button class=" font-semibold text-base bg-[#6BFDCC] text-[#fff] w-36 py-2 px-4 rounded-md">
+                                Withdraw
+                            </button>
+                            <button class="font-semibold text-base bg-[#FF9837] text-[#fff] w-36 py-2 px-4 rounded-md">
+                                Deposit
+                            </button>
+                         </div>
+            </div>
+            <div class="md:w-1/2 shadow-md h-[300px] ">
+                <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+            </div>
+
+        </section>
+        <section class="mb-4 flex flex-col gap-4 md:flex md:flex-row " data-aos="fade-up" data-aos-duration="1000" >
+            <div class="flex flex-col flex-wrap justify-center h-32 py-4 items-center shadow-md md:w-1/4">
+                <h2 class="text-base text-[#6BFDCC] font-medium ">Total Deposit</h2>
+                <h3 class="text-[#808080] text-base font-medium">USD <span>0.00</span></h3>
+               
+            </div>
+            <div class="flex flex-col flex-wrap justify-center h-32 py-4 items-center shadow-md md:w-1/4">
+                <h2 class="text-base text-[#6BFDCC] font-medium ">Total Withdrawals</h2>
+                <h3 class="text-[#808080] text-base font-medium">USD <span>0.00</span></h3>
+               
+            </div>
+            <div class="flex flex-col flex-wrap justify-center h-32 py-4 items-center shadow-md md:w-1/4">
+                <h2 class="text-base text-[#6BFDCC] font-medium ">Active Deposit</h2>
+                <h3 class="text-[#808080] text-base font-medium">USD <span>0.00</span></h3>
+               
+            </div>
+            <div class="flex flex-col flex-wrap justify-center h-32 py-4 items-center shadow-md w-full md:w-1/4">
+                <h2 class="text-base text-[#6BFDCC] font-medium ">Pending withdrawals</h2>
+                <h3 class="text-[#808080] text-base font-medium">USD <span>0.00</span></h3>
+               
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
