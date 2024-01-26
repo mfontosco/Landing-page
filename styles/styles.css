@@ -16,11 +16,10 @@
 .answer {
   display: none;
 }
-#hero{
-  margin-top:100px;
-}
+
 .overlay{
   background: rgba(0,0,0,0.5);
+
 }
 .read-more-content {
   overflow: hidden;
@@ -49,10 +48,9 @@
 }
 
 #hero{
-    background:url("../images/business.png");
-    margin-top:10px;
+    background:url("../images/coin-hero.jpg");
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     background-repeat:no-repeat;
 }
 
@@ -150,5 +148,8 @@ background: #F3FD6B;
 @media only screen and (max-width: 768px) {
   #coin-phone {
      background-image:none;
+  }
+  #hero{
+    background-sze:contain;
   }
 }
